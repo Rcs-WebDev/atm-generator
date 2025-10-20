@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Tambahkan ini di bagian bawah App.css */
+
+.idea-result {
+  background-color: #282c34; /* Warna latar sedikit lebih gelap */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 25px;
+  text-align: left; /* Membuat teks rata kiri */
+  width: 80%;
+  max-width: 700px;
+  border: 1px solid #4a4f5a;
+}
+
+.idea-result h3 {
+  margin-top: 0;
+  color: #61dafb; /* Warna biru React */
+}
+
+/* Memberi gaya pada elemen yang dibuat oleh ReactMarkdown */
+.idea-result strong {
+  color: #61dafb;
+}
+
+.idea-result p {
+  line-height: 1.6;
+}
+
+/* Tambahkan di bawah App.css */
+.video-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.video-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.video-container {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 900px;
+}
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
